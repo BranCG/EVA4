@@ -31,11 +31,6 @@ Nuestro sitio web emplea la información con el fin de proporcionar el mejor ser
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link btn btn-outline-light text-dark terminos" href="#INGRESO">
-                            <b>INGRESO DE CONCURSANTES</b>
-                        </a>
-                    </li>
-                    <li className="nav-item">
                         <button
                             className="nav-link btn btn-outline-light text-danger terminos"
                             onClick={politicasPrivacidad}

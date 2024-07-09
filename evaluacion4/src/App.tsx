@@ -14,7 +14,7 @@ function App() {
       <div><CompNav /></div>
       <div>
         <button onClick={() => setShowAPIRequest(!showAPIRequest)}>
-          {showAPIRequest ? 'Ocultar' : 'Obten Chiste Chuck-Norris'}
+          {showAPIRequest ? 'Ocultar' : 'Obten frase Chuck-Norris'}
         </button>
         {showAPIRequest && <CompAPIRequest />}
       </div>

@@ -1,13 +1,13 @@
 import React, { useState, useEffect} from "react";
 
 function CompAPIRequest() {
-    const [data, setData] = useState("");
+    const [data, setData] = useState("Cargando...");
 
     const getData = async () => {
         try {
             const resp = await fetch("https://api.chucknorris.io/jokes/random");
             const json = await resp.json();
-            setData(json);
+            setData(json.value);
         } catch (err: any) {
             setData(err.message);
         }
@@ -17,7 +17,7 @@ function CompAPIRequest() {
         getData();
     }, []);
 
-    return <pre>{JSON.stringify(data, null, 2)}</pre>;
+    return <pre>{JSON.stringify(data)}</pre>;
 }
 
 export default CompAPIRequest;
