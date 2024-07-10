@@ -12,8 +12,8 @@ export default function App() {
   return (
     <>
     <div>
-      <div><CompNav /></div>
-      <div><ImagenChuck /></div>
+      <CompNav />
+      <ImagenChuck />
       <div>
         <button onClick={() => setShowAPIRequest(!showAPIRequest)}>
           {showAPIRequest ? 'Ocultar' : 'Obten frase Chuck-Norris'}

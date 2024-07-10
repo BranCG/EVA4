@@ -19,7 +19,7 @@ body{
   width: 450px;
 }
 .imagen:hover {
-  filter: drop-shadow(0 0 3em #ff1100aa);
+  filter: drop-shadow(0 0 3em #00ffff);
 }
 
 .logo2 {
