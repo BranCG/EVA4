@@ -11,12 +11,13 @@ body{
   text-align: center;
 }
 
-.logo {
+.imagen{
   margin-top: auto;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   transition: filter 1000ms;
+  cursor: pointer;
 }
-.logo:hover {
+.imagen:hover {
   filter: drop-shadow(0 0 3em #ff1100aa);
 }
 

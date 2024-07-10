@@ -1,5 +1,6 @@
 import React, { useEffect } from "react"; 
 import ScrollReveal from "scrollreveal";  //para visualizar esto debe instalar scrollreveal -> npm install @types/scrollreveal
+import imagenChuck from "./assets/imagenCHUCK.png"
 
 
 export default function ImagenChuck() {
@@ -11,12 +12,12 @@ export default function ImagenChuck() {
             delay: 200,
             reset: true
         });
-        sr.reveal('.logo');
+        sr.reveal('.imagen');
     }, []);
 
     return (
         <div>
-            <img className="logo" src="https://avatars.githubusercontent.com/u/17794049?v=4" alt="Chuck Norris" />
+            <img className="imagen" src={imagenChuck} alt="Chuck Norris" />
         </div>
     );
 }
