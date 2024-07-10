@@ -1,6 +1,8 @@
+//Componente 2
+
 import React, { useState, useEffect} from "react";
 
-function CompAPIRequest() {
+export default function CompAPIRequest() {
     const [data, setData] = useState("Cargando...");
 
     const getData = async () => {
@@ -20,4 +22,3 @@ function CompAPIRequest() {
     return <pre>{JSON.stringify(data)}</pre>;
 }
 
-export default CompAPIRequest;
