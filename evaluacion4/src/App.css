@@ -16,6 +16,7 @@ body{
   margin-bottom: 50px;
   transition: filter 1000ms;
   cursor: pointer;
+  width: 450px;
 }
 .imagen:hover {
   filter: drop-shadow(0 0 3em #ff1100aa);
