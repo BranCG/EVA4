@@ -1,5 +1,5 @@
 //Componente 1
-
+import logoChuck from "./assets/logo-removebg-preview.png"
 import './App.css';
 
 
@@ -40,6 +40,7 @@ Nuestro sitio web emplea la información con el fin de proporcionar el mejor ser
                             <b>POLITICAS DE PRIVACIDAD</b>
                         </button>
                     </li>
+                    <li><img className="logo2" src={logoChuck} alt="Logo Chuck" /></li>
                 </ul>
             </div>
         </nav>
