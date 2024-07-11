@@ -34,7 +34,7 @@ body {
 .footer-container {
   width: 100%;
   margin-top: 100px;
-  padding: 30px 0;
+  padding: 10px 0;
   color: #000;
   font-size: 15px;
 }
@@ -45,7 +45,7 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 -30px;
 }
 
 .footer-column {

@@ -6,7 +6,7 @@ export default function CompFooter1() {
                     <h2><b>Contacto</b></h2><br />
                     <p><b>Dirección: Los olivos 982 Las condes, Santiago de Chile.</b></p>
                     <p><b>Teléfono: +56 9 11224455</b></p>
-                    <p><b>Email: contacto@BenefiViajes.com</b></p>
+                    <p><b>Email: contacto@ChuckNorris.com</b></p>
                 </div>
                 <div className="footer-column">
                     <h2><b>Síguenos</b></h2> <br />
