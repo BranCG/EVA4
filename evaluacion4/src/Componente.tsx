@@ -1,4 +1,3 @@
-//Componente 1 NAVBAR
 import './App.css';
 import LogoChuckNorris from './ComponenteLogo';
 
@@ -12,7 +11,7 @@ Uso de la información recogida\n\
 Nuestro sitio web emplea la información con el fin de proporcionar el mejor servicio posible, particularmente para mantener un registro de usuarios, de pedidos en caso que aplique, y mejorar nuestros productos y servicios.  Es posible que sean enviados correos electrónicos periódicamente a través de nuestro sitio con ofertas especiales, nuevos productos y otra información publicitaria que consideremos relevante para usted o que pueda brindarle algún beneficio, estos correos electrónicos serán enviados a la dirección que usted proporcione y podrán ser cancelados en cualquier momento.');
     };
     return (
-        <nav className="navbar navbar-expand-sm bg-warning fixed-top">
+        <nav className="navbar navbar-expand-sm bg-warning">
             <div className="container-fluid d-flex justify-content-center">
                 <ul className="navbar-nav">
                     <li className="nav-item">
@@ -23,6 +22,11 @@ Nuestro sitio web emplea la información con el fin de proporcionar el mejor ser
                     <li className="nav-item">
                         <a className="nav-link btn btn-outline-light text-dark" href="#SOMOS">
                             <b>¿QUE HACER?</b>
+                        </a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link btn btn-outline-light text-dark" href="#CONTACTO">
+                            <b>CONTACTANOS</b>
                         </a>
                     </li>
                     <li className="nav-item">
@@ -38,4 +42,5 @@ Nuestro sitio web emplea la información con el fin de proporcionar el mejor ser
         </nav>
     );
 }
+
 
