@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import CompBandera from './CompBandera';
 
 const PAISES_LATAM = [
     "Argentina", "Bolivia", "Brazil", "Chile", "Colombia", "Costa Rica",

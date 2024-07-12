@@ -1,5 +1,4 @@
 import './App.css';
-import CompBandera from './CompBandera';
 import LogoChuckNorris from './ComponenteLogo';
 
 export default function CompNav() {
