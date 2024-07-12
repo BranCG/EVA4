@@ -53,7 +53,7 @@ const CompFormu: React.FC = () => {
 
     return (
         <form className='bg-dark text-light' onSubmit={handleSubmit}>
-            <h1>¡FRASE EPICA EN EL FORMULARIO!</h1><br />
+            <h1><b>¡FRASE EPICA AQUÍ! <br /> LLENA EL FORMULARIO</b></h1><br />
             <label htmlFor="nombre"><b>Nombre y apellidos</b></label>
             <input
                 type="text"

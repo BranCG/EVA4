@@ -1,6 +1,6 @@
-/**Logo rotando**/
+/**Imagen principal Chuck**/
 .imagen {
-  margin-top: 70px;
+  margin-top: 40px;
   transition: filter 500ms;
   cursor: pointer;
   width: 450px;
@@ -139,7 +139,7 @@ input {
 .buttonEspecial {
   margin-top: 40px;
   border: 2px solid;
-  border-color: yellow;
+  border-color: yellow
 }
 
 .buttonEspecial2 {
@@ -149,20 +149,6 @@ input {
   border: 2px solid;
   border-color: yellow;
   font-size: 20px;
-}
-
-form {
-  width: auto;
-  border-radius: 10%;
-  margin: auto;
-  margin-top: 90px;
-  padding: 60px;
-  transition: filter 500ms;
-}
-
-
-form:hover {
-  filter: drop-shadow(0 0 5em black);
 }
 
 
@@ -175,4 +161,21 @@ form:hover {
   font-family: monospace;
   font-size: 20px;
   padding: 20px;
+}
+
+.titulo {
+  width: 100%;
+  font-size: 30px;
+  margin-top: 100px;
+  margin: auto;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  border-radius: 15px;
+  border: 2px solid yellow;
+  font-family:cursive;
+  cursor: pointer;
+  transition: filter 500ms;
+}
+.titulo:hover {
+  filter: drop-shadow(0 0 1em rgb(255, 238, 0));
 }
