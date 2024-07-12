@@ -12,14 +12,14 @@ export default function App() {
   return (
     <>
     <div>
-      <CompNav /> {/* Contiene componente anidado LogoChuckNorris  */}
+      <CompNav /> {/*Contiene componente anidado LogoChuckNorris*/}
       <div className="container p-3">
         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 cool-xxl-6">
           <CompFormu />
         </div>
         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 cool-xxl-6">
           <ImagenChuck />
-          <CompBtnFrase />
+          <CompBtnFrase /> {/*Contiene componente anidado CompApiRequest*/}
         </div>
       </div>    
     </div>

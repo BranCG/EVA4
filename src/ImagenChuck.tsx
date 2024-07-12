@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"; 
+import { useEffect } from "react"; 
 import ScrollReveal from "scrollreveal";  //para visualizar esto debe instalar scrollreveal -> npm install @types/scrollreveal
 import imagenChuck from "./assets/imagenCHUCK.png"
 

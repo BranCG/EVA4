@@ -7,7 +7,7 @@ export const CompBtnFrase: React.FC = () => {
     return (
         <div>
             <button className='buttonEspecial2 bg-dark' onClick={() => setShowAPIRequest(!showAPIRequest)}>
-                {showAPIRequest ? 'Ocultar' : 'OBTEN FRASE CHUCK NORRIS'}
+                {showAPIRequest ? 'OCULTAR' : 'OBTEN FRASE CHUCK NORRIS'}
             </button>
             {showAPIRequest && <CompApiRequest />}
         </div>
