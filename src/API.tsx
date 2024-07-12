@@ -1,6 +1,6 @@
 import React, { useState, useEffect} from "react";
 
-export default function CompAPIRequest() {
+export default function CompApiRequest() {
     const [data, setData] = useState("Cargando...");
 
     const getData = async () => {

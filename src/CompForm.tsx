@@ -77,9 +77,7 @@ const CompFormu: React.FC = () => {
                     <option key={country} value={country}>{country}</option>
                 ))}
             </select> <br/>
-
             <button className='buttonEspecial bg-danger' type="submit">¡Suscribirme!</button> <br />
-            <CompBandera />
         </form>
         
     );

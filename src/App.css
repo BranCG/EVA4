@@ -7,7 +7,7 @@
 }
 
 .imagen:hover {
-  filter: drop-shadow(0 0 3em #db3c0c);
+  filter: drop-shadow(0 0 3em black);
 }
 
 .logo2 {
@@ -135,7 +135,18 @@ input {
 }
 
 .buttonEspecial {
-  margin-top: 50px;
+  margin-top: 20px;
+  border: 2px solid;
+  border-color: yellow;
+}
+
+.buttonEspecial2 {
+  width: 400px;
+  height: 70px;
+  margin-top: 20px;
+  border: 2px solid;
+  border-color: yellow;
+  font-size: 20px;
 }
 
 form {
@@ -149,7 +160,7 @@ form {
 
 
 form:hover {
-  filter: drop-shadow(0 0 3em #db3c0c);
+  filter: drop-shadow(0 0 5em black);
 }
 
 .carta {

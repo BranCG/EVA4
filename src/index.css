@@ -16,7 +16,7 @@
 
 body {
   margin: 0;
-  background: radial-gradient(circle, #4e1a1a, #000000);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.pinimg.com/736x/f5/71/43/f57143810c15dddcd9f6c122770e3ad4.jpg");
 }
 
 h1 {
