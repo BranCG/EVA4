@@ -26,10 +26,11 @@
 }
 
 
+
+
 .footer-container {
   width: 100%;
-  margin-top: 100px;
-  padding: 10px 0;
+  margin-top: 10px;
   color: #ffffff;
   font-size: 15px;
 }
@@ -128,3 +129,13 @@ form {
   margin-top: 150px;
   padding: 30px;
 }
+
+
+.carta {
+  border: 1px solid;
+  border-radius: 10px;
+  width: 100%;
+  font-family: monospace;
+  font-size: 20px
+}
+

@@ -19,6 +19,8 @@ export default function CompAPIRequest() {
         getData();
     }, []);
 
-    return <pre>{JSON.stringify(data)}</pre>;
+    return <div className="carta bg-light text-dark">
+        <pre>{JSON.stringify(data)}</pre>
+        </div>
 }
 
