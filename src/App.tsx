@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import CompNav from './Componente'
 import 'bootstrap/dist/css/bootstrap.min.css';  //importo Booststrap
+import CompNav from './ComponenteNAVBAR'
 import CompAPIRequest from './API'  //importo componente que contiene api
 import ImagenChuck from './ImagenChuck';
 import CompFooter1 from './CompFooter';

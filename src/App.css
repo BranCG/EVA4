@@ -1,7 +1,7 @@
 /**Logo rotando**/
 .imagen {
   margin-top: 70px;
-  transition: filter 1000ms;
+  transition: filter 500ms;
   cursor: pointer;
   width: 450px;
 }
@@ -13,6 +13,22 @@
 .logo2 {
   width: 55px;
   animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logo3 {
+  width: 55px;
+  animation: spin 2.5s linear infinite;
+  margin-top: 15px;
 }
 
 @keyframes spin {
@@ -128,8 +144,13 @@ form {
   margin: auto;
   margin-top: 150px;
   padding: 30px;
+  transition: filter 500ms;
 }
 
+
+form:hover {
+  filter: drop-shadow(0 0 3em #db3c0c);
+}
 
 .carta {
   margin-top: 10px;
@@ -140,4 +161,3 @@ form {
   font-size: 20px;
   padding: 20px;
 }
-

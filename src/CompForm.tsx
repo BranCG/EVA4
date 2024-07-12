@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import CompBandera from './CompBandera';
 
 const PAISES_LATAM = [
     "Argentina", "Bolivia", "Brazil", "Chile", "Colombia", "Costa Rica",
     "Cuba", "Dominican Republic", "Ecuador", "El Salvador", "Guatemala",
     "Honduras", "Mexico", "Nicaragua", "Panama", "Paraguay", "Peru",
-    "Puerto Rico", "Uruguay", "Venezuela"
-];
+    "Puerto Rico", "Uruguay", "Venezuela"];
 
 const CompFormu: React.FC = () => {
     const [nombre, setNombre] = useState<string>(() => localStorage.getItem('nombre') || '');
@@ -47,7 +47,7 @@ const CompFormu: React.FC = () => {
             alert("Por favor ingrese un correo electrónico válido.");
             return;
         }
-        alert("Formulario enviado con éxito.");
+        alert("Formulario enviado con éxito, recibiras frases especiales diarias de CHUCK! .");
     };
 
     return (
@@ -76,10 +76,12 @@ const CompFormu: React.FC = () => {
                 {PAISES_LATAM.map((country) => (
                     <option key={country} value={country}>{country}</option>
                 ))}
-            </select> <br />
+            </select> <br/>
 
-            <button className='buttonEspecial bg-danger' type="submit">¡Suscribirme!</button>
+            <button className='buttonEspecial bg-danger' type="submit">¡Suscribirme!</button> <br />
+            <CompBandera />
         </form>
+        
     );
 };
 

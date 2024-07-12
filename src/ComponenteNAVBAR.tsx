@@ -1,4 +1,5 @@
 import './App.css';
+import CompBandera from './CompBandera';
 import LogoChuckNorris from './ComponenteLogo';
 
 export default function CompNav() {
@@ -13,7 +14,7 @@ Nuestro sitio web emplea la información con el fin de proporcionar el mejor ser
     return (
         <nav className="navbar navbar-expand-sm bg-dark">
             <div className="container-fluid d-flex justify-content-center">
-                <ul className="navbar-nav">
+                <ul className="navbar-nav"> 
                     <li className="nav-item">
                         <a className="nav-link btn btn-outline-danger text-light" href="#HOME">
                             <b>HOME</b>
