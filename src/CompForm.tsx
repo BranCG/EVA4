@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
+
 const PAISES_LATAM = [
     "Argentina", "Bolivia", "Brazil", "Chile", "Colombia", "Costa Rica",
     "Cuba", "Dominican Republic", "Ecuador", "El Salvador", "Guatemala",
@@ -46,11 +47,13 @@ const CompFormu: React.FC = () => {
             alert("Por favor ingrese un correo electrónico válido.");
             return;
         }
-        alert("Formulario enviado con éxito, recibiras frases especiales diarias de CHUCK! .");
+        alert("Enviado con éxito, ¡RECIBIRAS FRASES EPICAS de CHUCK DIARIAMENTE!");
     };
 
+
     return (
-        <form className='bg-dark' onSubmit={handleSubmit}>
+        <form className='bg-dark text-light' onSubmit={handleSubmit}>
+            <h1>¡FRASE EPICA EN EL FORMULARIO!</h1><br />
             <label htmlFor="nombre"><b>Nombre y apellidos</b></label>
             <input
                 type="text"
@@ -83,3 +86,4 @@ const CompFormu: React.FC = () => {
 };
 
 export default CompFormu;
+

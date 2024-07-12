@@ -122,6 +122,7 @@
 
 .container {
   display: flex;
+  justify-content: space-between;
 }
 
 label {
@@ -132,10 +133,11 @@ label {
 input {
   width: 60%;
   background-color: white;
+  color: black;
 }
 
 .buttonEspecial {
-  margin-top: 20px;
+  margin-top: 40px;
   border: 2px solid;
   border-color: yellow;
 }
@@ -153,8 +155,8 @@ form {
   width: auto;
   border-radius: 10%;
   margin: auto;
-  margin-top: 150px;
-  padding: 30px;
+  margin-top: 90px;
+  padding: 60px;
   transition: filter 500ms;
 }
 
@@ -162,6 +164,8 @@ form {
 form:hover {
   filter: drop-shadow(0 0 5em black);
 }
+
+
 
 .carta {
   margin-top: 10px;

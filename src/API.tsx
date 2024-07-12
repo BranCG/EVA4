@@ -1,7 +1,7 @@
 import { useState, useEffect} from "react";
 
 export default function CompApiRequest() {
-    const [data, setData] = useState("Cargando...");
+    const [data, setData] = useState("CARGANDO...");
 
     const getData = async () => {
         try {
