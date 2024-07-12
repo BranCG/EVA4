@@ -1,20 +1,20 @@
 export default function CompFooter1() {
     return (
-        <footer id="CONTACTO" className="bg-warning footer-container">
+        <footer id="CONTACTO" className="bg-dark text-light footer-container">
             <div className="footer-row">
                 <div className="footer-column">
-                    <h2><b>Contacto</b></h2><br />
+                    <h2><b>CONTACTO</b></h2><br />
                     <p><b>Dirección: Los olivos 982 Las condes, Santiago de Chile.</b></p>
                     <p><b>Teléfono: +56 9 11224455</b></p>
                     <p><b>Email: contacto@ChuckNorris.com</b></p>
                 </div>
-                <div className="footer-column">
-                    <h2><b>Síguenos</b></h2> <br />
+                <div className="footer-column2">
+                    <h2><b>SÍGUENOS</b></h2> <br />
                     <ul>
-                        <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-                        <li><a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-                        <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                        <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a className="text-light btn-outline-danger" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><b>Facebook</b></a></li>
+                        <li><a className="text-light btn-outline-dangerbtn-outline-danger" href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><b>Twitter</b></a></li>
+                        <li><a className="text-light btn-outline-danger" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><b>Instagram</b></a></li>
+                        <li><a className="text-light btn-outline-danger" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><b>LinkedIn</b></a></li>
                     </ul>
                 </div>
             </div>

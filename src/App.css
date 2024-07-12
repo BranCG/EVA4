@@ -1,19 +1,13 @@
-body {
-
-  font-family: Arial, sans-serif;
-}
-
-
+/**Logo rotando**/
 .imagen {
   margin-top: 70px;
-  margin-bottom: 50px;
   transition: filter 1000ms;
   cursor: pointer;
   width: 450px;
 }
 
 .imagen:hover {
-  filter: drop-shadow(0 0 3em #00ffff);
+  filter: drop-shadow(0 0 3em #db3c0c);
 }
 
 .logo2 {
@@ -31,11 +25,12 @@ body {
   }
 }
 
+
 .footer-container {
   width: 100%;
   margin-top: 100px;
   padding: 10px 0;
-  color: #000;
+  color: #ffffff;
   font-size: 15px;
 }
 
@@ -50,6 +45,7 @@ body {
 
 .footer-column {
   flex: 1;
+  text-align: left;
   padding: 20px;
   max-width: 500px;
 }
@@ -75,4 +71,60 @@ body {
 
 .footer-column ul li a:hover {
   text-decoration: underline;
+}
+
+.footer-column2 {
+  flex: 1;
+  padding: 20px;
+  max-width: 500px;
+  text-align: right;
+}
+
+.footer-column2 h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-column2 ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column2 ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column2 ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-column2 ul li a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+}
+
+label {
+  display: block;
+  color: white;
+}
+
+input {
+  width: 60%;
+  background-color: white;
+}
+
+.buttonEspecial {
+  margin-top: 50px;
+}
+
+form {
+  width: auto;
+  border-radius: 10%;
+  margin: auto;
+  margin-top: 150px;
+  padding: 30px;
 }

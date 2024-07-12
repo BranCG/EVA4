@@ -16,9 +16,7 @@
 
 body {
   margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
-  background: radial-gradient(circle, #dad9d9, #e97e04);
+  background: radial-gradient(circle, #4e1a1a, #000000);
 }
 
 h1 {
@@ -27,39 +25,17 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
+  border-radius: 10px;
+  border: 2px solid transparent;
   padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
+  font-size: 18px;
   font-family: inherit;
-  background-color: #000;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.50s;
   font-family: monospace;
 }
 
 button:hover {
-  border-color: #00ffff;
+  border-color: white;
 }
 
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-
-  a:hover {
-    color: #747bff;
-  }
-
-  button {
-    background-color: #f9f9f9;
-
-  }
-}

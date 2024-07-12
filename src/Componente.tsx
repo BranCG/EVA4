@@ -11,27 +11,27 @@ Uso de la información recogida\n\
 Nuestro sitio web emplea la información con el fin de proporcionar el mejor servicio posible, particularmente para mantener un registro de usuarios, de pedidos en caso que aplique, y mejorar nuestros productos y servicios.  Es posible que sean enviados correos electrónicos periódicamente a través de nuestro sitio con ofertas especiales, nuevos productos y otra información publicitaria que consideremos relevante para usted o que pueda brindarle algún beneficio, estos correos electrónicos serán enviados a la dirección que usted proporcione y podrán ser cancelados en cualquier momento.');
     };
     return (
-        <nav className="navbar navbar-expand-sm bg-warning">
+        <nav className="navbar navbar-expand-sm bg-dark">
             <div className="container-fluid d-flex justify-content-center">
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <a className="nav-link btn btn-outline-light text-dark" href="#HOME">
+                        <a className="nav-link btn btn-outline-danger text-light" href="#HOME">
                             <b>HOME</b>
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link btn btn-outline-light text-dark" href="#SOMOS">
+                        <a className="nav-link btn btn-outline-danger text-light" href="#SOMOS">
                             <b>¿QUE HACER?</b>
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link btn btn-outline-light text-dark" href="#CONTACTO">
+                        <a className="nav-link btn btn-outline-danger text-light" href="#CONTACTO">
                             <b>CONTACTANOS</b>
                         </a>
                     </li>
                     <li className="nav-item">
                         <button
-                            className="nav-link btn btn-outline-light text-danger terminos"
+                            className="nav-link btn btn-outline-danger text-light terminos"
                             onClick={politicasPrivacidad}>
                             <b>POLITICAS DE PRIVACIDAD</b>
                         </button>
