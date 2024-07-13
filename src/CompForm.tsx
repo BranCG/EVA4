@@ -1,13 +1,24 @@
 import React, { useState, useEffect } from 'react';
 
-
 const PAISES_LATAM = [
     "Argentina", "Bolivia", "Brazil", "Chile", "Colombia", "Costa Rica",
     "Cuba", "Dominican Republic", "Ecuador", "El Salvador", "Guatemala",
     "Honduras", "Mexico", "Nicaragua", "Panama", "Paraguay", "Peru",
-    "Puerto Rico", "Uruguay", "Venezuela"];
+    "Puerto Rico", "Uruguay", "Venezuela"
+];
 
-const CompFormu: React.FC = () => {
+interface User {
+    id: number;
+    nombre: string;
+    correo: string;
+    pais: string;
+}
+
+interface CompFormuProps {
+    onAddUser: (user: User) => void;
+}
+
+const CompFormu: React.FC<CompFormuProps> = ({ onAddUser }) => {
     const [nombre, setNombre] = useState<string>(() => localStorage.getItem('nombre') || '');
     const [correo, setCorreo] = useState<string>(() => localStorage.getItem('correo') || '');
     const [pais, setPais] = useState<string>(() => localStorage.getItem('pais') || '');
@@ -47,9 +58,17 @@ const CompFormu: React.FC = () => {
             alert("Por favor ingrese un correo electrónico válido.");
             return;
         }
-        alert("Enviado con éxito, ¡RECIBIRAS FRASES EPICAS de CHUCK DIARIAMENTE!");
+        const newUser: User = {
+            id: Date.now(),
+            nombre,
+            correo,
+            pais
+        };
+        onAddUser(newUser);
+        setNombre('');
+        setCorreo('');
+        setPais('');
     };
-
 
     return (
         <form className='bg-dark text-light' onSubmit={handleSubmit}>
@@ -81,9 +100,7 @@ const CompFormu: React.FC = () => {
             </select> <br/>
             <button className='buttonEspecial bg-danger' type="submit">¡Suscribirme!</button> <br />
         </form>
-        
     );
 };
 
 export default CompFormu;
-
