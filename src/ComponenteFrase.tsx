@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CompApiRequest from "./API";
+import CompApiRequest from "./CompAAPI";
 
 export const CompBtnFrase: React.FC = () => {
     const [showAPIRequest, setShowAPIRequest] = useState(false);

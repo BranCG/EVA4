@@ -166,12 +166,12 @@ input {
 }
 
 .titulo {
-  width: 100%;
+  width: 50%;
   font-size: 30px;
-  margin-top: 100px;
   margin: auto;
+  margin-top: 50px;
   color: white;
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   border-radius: 15px;
   border: 2px solid yellow;
   font-family:cursive;
@@ -183,66 +183,33 @@ input {
 }
 
 
-.app-container {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
+.list-section {
+  width: auto;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid white;
 }
 
-.form-section, .list-section {
-    width: 45%;
-    background: #f5f5f5;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.form-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-container label {
-    margin-top: 10px;
-}
-
-.form-container input, .form-container select {
-    padding: 10px;
-    margin-top: 5px;
-}
-
-.form-container button {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #d9534f;
-    color: white;
-    border: none;
-    border-radius: 5px;
-}
 
 .user-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px 0;
-    padding: 10px;
-    background-color: #ffffff;
-    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
+
+/*Botones Editar y Eliminar*/
 .edit-btn {
-    background-color: #5cb85c;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin-right: 10px;
+  width: auto;
+  height: 50px;
+  padding: auto;
+  border: 2px solid yellow;
+  border-radius: 20px;
+  margin-right: 20px;
 }
 
 .delete-btn {
-    background-color: #d9534f;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
+  width: auto;
+  height: 50px;
+  padding: auto;
+  border: 2px solid yellow;
+  border-radius: 20px;
 }
