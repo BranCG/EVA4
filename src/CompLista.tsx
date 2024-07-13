@@ -17,7 +17,7 @@ interface CompListaProps {
 
 const CompLista: React.FC<CompListaProps> = ({ users, onDeleteUser, onEditUser }) => {
     return (
-        <div>
+        <div id='SUSCRIPTORES'>
             <h2><p>LISTA DE SUSCRIPTORES</p></h2> <br />
             {users.map(user => (
                 <div key={user.id} >

@@ -46,19 +46,18 @@ const [users, setUsers] = useState<User[]>(() => {
   return (
     <>
     <div>
-        <CompNav /> {/*Contiene componente anidado LogoChuckNorris*/}
-        <div className='container'>
+        <CompNav /> {/*NAVBAR Contiene componente anidado LogoChuckNorris - Componente nro7*/}
+        <div className='container'> 
           <p className='titulo'><b>~ Chuck Norris no duerme, ESPERA.</b></p>
-              <ImagenChuck />
-              <CompBtnFrase /> {/*Contiene componente anidado CompApiRequest*/}
-              <CompFormu onAddUser={addUser} />
-
-          <div className="list-section bg-info">
+              <ImagenChuck /> {/*Imagen principal de Chuck Norris*/}
+              <CompBtnFrase /> {/*Contiene componente anidado CompApiRequest - Componente nro8*/}
+              <CompFormu onAddUser={addUser} /> {/*seccion Formulario*/}
+          <div className="list-section bg-info"> {/*seccion de lista CRUD*/}
               <CompLista users={users} onDeleteUser={deleteUser} onEditUser={editUser} />
           </div> 
         </div> 
     </div>
-    <CompFooter1 /> 
+    <CompFooter1 /> {/*Footer de contacto*/}
     </>
   )
 }
