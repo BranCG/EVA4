@@ -1,4 +1,4 @@
-import ImagenChuck from "./ImagenChuck"
+import ImagenChuck from "./ComponenteImagenChuck"
 import CompBtnFrase from "./ComponenteFrase"
 
 

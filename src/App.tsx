@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';  //importo Booststrap
 import CompNav from './ComponenteNAVBAR' 
-import ImagenChuck from './ImagenChuck';
+import ImagenChuck from './ComponenteImagenChuck';
 import CompFooter1 from './CompFooter';
 import CompFormu from './CompForm';
 import CompBtnFrase from './ComponenteFrase';
