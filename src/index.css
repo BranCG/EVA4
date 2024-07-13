@@ -35,7 +35,7 @@ form:hover {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 25px;
   font-family: cursive;
   line-height: 1.1;
   color: white;
@@ -64,3 +64,13 @@ button:hover {
   border-color: white;
 }
 
+label {
+  display: block;
+  color: white;
+}
+
+input {
+  width: 40%;
+  background-color: white;
+  color: black;
+}

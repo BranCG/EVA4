@@ -127,17 +127,6 @@
 
 
 
-label {
-  display: block;
-  color: white;
-}
-
-input {
-  width: 60%;
-  background-color: white;
-  color: black;
-}
-
 .buttonEspecial {
   margin-top: 40px;
   border: 2px solid;

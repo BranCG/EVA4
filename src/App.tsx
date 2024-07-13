@@ -1,66 +1,31 @@
-import React, { useState, useEffect } from 'react';
-import './App.css'
+import React from 'react';
+import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';  //importo Booststrap
-import CompNav from './Component/ComponenteNAVBAR' 
+import CompNav from './Component/ComponenteNAVBAR'; 
 import ImagenChuck from './Component/ComponenteImagenChuck';
 import CompFooter1 from './Component/CompFooter';
-import CompFormu from './Component/CompForm';
 import CompBtnFrase from './Component/ComponenteFrase';
-import CompLista from './Component/CompLista';
+import CompLogicaCrud from './Component/ComponenteLogicaCrud';
+//En total realice 10 componentes, estan todos en carpeta "Component".
+//Profesor, favor instalar libreria scrollReveal para funcionalidad "npm install scrollreveal".
+//App.css uso estilos para las CLASES que cree.
+//index.css uso los estilos para los ELEMENTOS/ETIQUETAS HTML
 
-interface User {
-    id: number;
-    nombre: string;
-    correo: string;
-    pais: string;
-}
-
-const App: React.FC = () => {
-const [users, setUsers] = useState<User[]>(() => {
-        const savedUsers = localStorage.getItem('users');
-        return savedUsers ? JSON.parse(savedUsers) : [];
-    });
-
-    useEffect(() => {
-        localStorage.setItem('users', JSON.stringify(users));
-    }, [users]);
-
-    const addUser = (user: User) => {
-        setUsers([...users, user]);
-    };
-
-    const deleteUser = (id: number) => {
-        setUsers(users.filter(user => user.id !== id));
-    };
-
-    const editUser = (id: number) => {
-        const userName = prompt("Editar Nombre:", users.find(user => user.id === id)?.nombre);
-        const userEmail = prompt("Editar Correo:", users.find(user => user.id === id)?.correo);
-        const userCountry = prompt("Editar País:", users.find(user => user.id === id)?.pais);
-        
-        if (userName && userEmail && userCountry) {
-            setUsers(users.map(user => (user.id === id ? { id, nombre: userName, correo: userEmail, pais: userCountry } : user)));
-        }
-    };
-
-  return (
-    <>
-    <div>
-        <CompNav /> {/*NAVBAR Contiene componente anidado LogoChuckNorris - Componente nro7*/}
-        <div className='container'> 
-          <p className='titulo'><b>~ Chuck Norris no duerme, ESPERA.</b></p>
-              <ImagenChuck /> {/*Imagen principal de Chuck Norris*/}
-              <CompBtnFrase /> {/*Contiene componente anidado CompApiRequest - Componente nro8*/}
-              <CompFormu onAddUser={addUser} /> {/*seccion Formulario*/}
-          <div className="list-section bg-info"> {/*seccion de lista CRUD*/}
-              <CompLista users={users} onDeleteUser={deleteUser} onEditUser={editUser} />
-          </div> 
-        </div> 
-    </div>
-    <CompFooter1 /> {/*Footer de contacto*/}
-    </>
-  )
+const App: React.FC = () => {  
+    return (
+        <>
+            <div>
+                <CompNav /> {/*Barra de navegacion Contiene componente anidado LogoChuckNorris*/}
+                <div className='container'> 
+                    <p className='titulo'><b>~ Chuck Norris no duerme, ESPERA.</b></p>
+                    <ImagenChuck /> {/*Imagen principal de Chuck Norris*/}
+                    <CompBtnFrase /> {/*Contiene componente anidado CompApiRequest*/}
+                    <CompLogicaCrud /> {/*Contiene logica y 2 componentes anidados CompLista y CompFormu*/}
+                </div> 
+            </div>
+            <CompFooter1 /> {/*Footer de contacto "pie de pagina"*/}
+        </>
+    );
 }
 
 export default App;
-

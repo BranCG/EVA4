@@ -45,7 +45,7 @@ Nuestro sitio web emplea la información con el fin de proporcionar el mejor ser
                     </li>
                     <li className="nav-item">
                         <button
-                            className="nav-link btn btn-outline-danger text-light terminos"
+                            className="nav-link btn btn-outline-danger text-light"
                             onClick={politicasPrivacidad}>
                             <b>POLITICAS DE PRIVACIDAD</b>
                         </button>
