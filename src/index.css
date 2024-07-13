@@ -44,6 +44,11 @@ h1 {
   border: 2px solid yellow;
 }
 
+h2 {
+  font-style: normal;
+  font-family: cursive;
+}
+
 button {
   border-radius: 10px;
   border: 2px solid transparent;

@@ -17,10 +17,10 @@ interface CompListaProps {
 
 const CompLista: React.FC<CompListaProps> = ({ users, onDeleteUser, onEditUser }) => {
     return (
-        <div className="list-section bg-dark text-light">
-            <h2>Si estas aquí, recibiras tu frase!</h2>
+        <div>
+            <h2><p>LISTA DE SUSCRIPTORES</p></h2> <br />
             {users.map(user => (
-                <div key={user.id} className="user-card">
+                <div key={user.id} >
                     <p>{user.nombre} - {user.correo} - {user.pais}</p>
                     <button onClick={() => onEditUser(user.id)} className="edit-btn bg-success">Editar</button>
                     <button onClick={() => onDeleteUser(user.id)} className="delete-btn bg-danger">Eliminar</button>
