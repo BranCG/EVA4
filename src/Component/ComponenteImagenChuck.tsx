@@ -1,6 +1,6 @@
 import { useEffect } from "react"; 
 import ScrollReveal from "scrollreveal";  //para visualizar esta libreria debe instalar scrollreveal -> npm install @types/scrollreveal
-import imagenChuck from "./assets/imagenCHUCK.png"
+import imagenChuck from "../assets/imagenCHUCK.png"
 
 
 export default function ImagenChuck() {

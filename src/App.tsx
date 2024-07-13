@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';  //importo Booststrap
-import CompNav from './ComponenteNAVBAR' 
-import ImagenChuck from './ComponenteImagenChuck';
-import CompFooter1 from './CompFooter';
-import CompFormu from './CompForm';
-import CompBtnFrase from './ComponenteFrase';
-import CompLista from './CompLista';
+import CompNav from './Component/ComponenteNAVBAR' 
+import ImagenChuck from './Component/ComponenteImagenChuck';
+import CompFooter1 from './Component/CompFooter';
+import CompFormu from './Component/CompForm';
+import CompBtnFrase from './Component/ComponenteFrase';
+import CompLista from './Component/CompLista';
 
 interface User {
     id: number;

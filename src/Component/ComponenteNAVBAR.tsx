@@ -1,4 +1,4 @@
-import './App.css';
+import "../App.css"
 import LogoChuckNorris from './ComponenteLogo';
 
 export default function CompNav() {

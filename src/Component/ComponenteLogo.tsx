@@ -1,5 +1,5 @@
-import LogoChuck from "./assets/logo-removebg-preview.png"
-import './App.css';
+import LogoChuck from "../assets/logo-removebg-preview.png"
+import '../App.css';
 
 export default function LogoChuckNorris() {
     return (

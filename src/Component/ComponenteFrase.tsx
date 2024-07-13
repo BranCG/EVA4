@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import CompApiRequest from "./CompAAPI";
-import Revolver from "./assets/revolverDibujo.png"
+import Revolver from "../assets/revolverDibujo.png"
 
 export const CompBtnFrase: React.FC = () => {
     const [showAPIRequest, setShowAPIRequest] = useState(false);
