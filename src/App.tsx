@@ -6,7 +6,7 @@ import ImagenChuck from './Component/ComponenteImagenChuck';
 import CompFooter1 from './Component/CompFooter';
 import CompBtnFrase from './Component/ComponenteFrase';
 import CompLogicaCrud from './Component/ComponenteLogicaCrud';
-//En total realice 10 componentes, estan todos en carpeta "Component".
+//En total realice 10 componentes, estan todos en carpeta "Component", el componente anidado nivel 4 se llama <CompLogicCrud />
 //Profesor, favor instalar libreria scrollReveal para funcionalidad "npm install scrollreveal".
 //App.css uso estilos para las CLASES que cree.
 //index.css uso los estilos para los ELEMENTOS/ETIQUETAS HTML
