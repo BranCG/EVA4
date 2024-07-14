@@ -63,8 +63,8 @@ const CompFormu: React.FC<CompFormuProps> = ({ onAddUser }) => {
 
     // Función para manejar el envío del formulario
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();  // Evita recargar pagina al enviar formulario.
-        if (!validarCorreo(correo)) {  // Valida el formato del correo.
+        e.preventDefault();  //evita recargar pagina al enviar formulario.
+        if (!validarCorreo(correo)) {  //Valida el formato del correo.
             alert("Por favor ingrese un correo electrónico válido.");
             return;
         }
