@@ -79,6 +79,10 @@ const CompFormu: React.FC<CompFormuProps> = ({ onAddUser }) => {
         setNombre('');  // Reinicia los estados a valores vacíos después de agregar el usuario
         setCorreo('');
         setPais('');
+        // Limpia también el localStorage
+        localStorage.removeItem('nombre');
+        localStorage.removeItem('correo');
+        localStorage.removeItem('pais');
     };
 
     return (
@@ -119,4 +123,4 @@ const CompFormu: React.FC<CompFormuProps> = ({ onAddUser }) => {
     );
 };
 
-export default CompFormu;  
+export default CompFormu;
