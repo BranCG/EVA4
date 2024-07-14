@@ -50,7 +50,7 @@ const CompLogicaCrud: React.FC = () => {
 
     return (
         <div>
-            <CompFormu onAddUser={addUser} /> {/*seccion Formulario*/}
+            <CompFormu onAddUser={addUser} /> {/*seccion Formulario anida CompChuckInterrog*/}
             <div className="list-section bg-info"> {/*seccion de lista CRUD*/}
                 <CompLista users={users} onDeleteUser={deleteUser} onEditUser={editUser} />
             </div>

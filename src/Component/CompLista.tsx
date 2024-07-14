@@ -22,8 +22,8 @@ const CompLista: React.FC<CompListaProps> = ({ users, onDeleteUser, onEditUser }
             {users.map(user => (
                 <div key={user.id} >
                     <p>{user.nombre} - {user.correo} - {user.pais}</p>
-                    <button onClick={() => onEditUser(user.id)} className="edit-btn bg-success">Editar</button>
-                    <button onClick={() => onDeleteUser(user.id)} className="delete-btn bg-danger">Eliminar</button>
+                    <button onClick={() => onEditUser(user.id)} className="buttonGenerales edit-btn bg-success">Editar</button>
+                    <button onClick={() => onDeleteUser(user.id)} className="buttonGenerales delete-btn bg-danger">Eliminar</button>
                 </div>
             ))}
         </div>

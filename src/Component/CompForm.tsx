@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ImgChuck from './CompInterrog';
 
 const PAISES_LATAM = [
     "Argentina", "Bolivia", "Brazil", "Chile", "Colombia", "Costa Rica",
@@ -72,7 +73,7 @@ const CompFormu: React.FC<CompFormuProps> = ({ onAddUser }) => {
 
     return (
         <form id='FORM' className='bg-dark text-light' onSubmit={handleSubmit}>
-            <h1><b>¡FRASE EPICA AQUÍ, LLENA EL FORMULARIO!</b></h1><br />
+            <h2><b>¡LLENA EL FORMULARIO!</b></h2><br />
             <label htmlFor="nombre"><b>Nombre y apellidos</b></label>
             <input
                 type="text"
@@ -98,7 +99,8 @@ const CompFormu: React.FC<CompFormuProps> = ({ onAddUser }) => {
                     <option key={country} value={country}>{country}</option>
                 ))}
             </select> <br/>
-            <button className='buttonEspecial bg-danger' type="submit"><b>¡Suscribirme!</b></button> <br />
+            <button className='buttonEspecial buttonGenerales bg-danger' type="submit"><b>¡Suscribirme!</b></button> <br />
+            <ImgChuck />
         </form>
     );
 };

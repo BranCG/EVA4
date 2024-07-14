@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.css'; 
 import 'bootstrap/dist/css/bootstrap.min.css';  //importo Booststrap
 import CompNav from './Component/ComponenteNAVBAR'; 
 import ImagenChuck from './Component/ComponenteImagenChuck';
