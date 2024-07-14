@@ -1,20 +1,19 @@
-/**Imagen principal Chuck**/
+/**IMAGEN PRINCIPAL CHUCK**/
 .imagen {
   margin-top: 40px;
   transition: filter 500ms;
   cursor: pointer;
   width: 450px;
 }
-
 .imagen:hover {
   filter: drop-shadow(0 0 3em black);
 }
 
+/**LOGO DEL NAV GIRANDO**/
 .logo2 {
   width: 55px;
   animation: spin 2.5s linear infinite;
 }
-
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -25,39 +24,24 @@
   }
 }
 
-.logo3 {
-  width: 55px;
-  animation: spin 2.5s linear infinite;
-  margin-top: 15px;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
+/**LOGO DE BOTON FRASE INSTA, REVOLVER GIRANDO**/
 .revolver {
   width: 60px;
   animation: spin 0.5s linear infinite;
   margin-top: 15px;
 }
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
 
-
-.form-h2 {
-  font-size: 25px;
-  font-family: cursive;
-  line-height: 1.1;
-  color: white;
-  background-color: black;
-  border-radius: 10px;
-  border: 2px solid yellow;
+  to {
+    transform: rotate(360deg);
+  }
 }
 
+
+/**ESTILOS PARA EL FOOTER**/
 .footer-container {
   width: 100%;
   margin-top: 10px;
@@ -65,7 +49,7 @@
   font-size: 15px;
   margin-top: 300px;
 }
-
+/**CONTENEDOR PARA AMBOS LADOS DEL FOOTER**/
 .footer-row {
   display: flex;
   justify-content: space-between;
@@ -75,92 +59,96 @@
   padding: 0 -30px;
 }
 
+/**ESTILOS PARA CADA COLUMNA DEL FOOTER**/
 .footer-column {
   flex: 1;
   text-align: left;
   padding: 20px;
   max-width: 500px;
 }
-
 .footer-column h2 {
   font-size: 24px;
   margin-bottom: 10px;
 }
-
 .footer-column ul {
   list-style-type: none;
   padding: 0;
 }
-
 .footer-column ul li {
   margin-bottom: 10px;
 }
-
 .footer-column ul li a {
   color: black;
   text-decoration: none;
 }
-
 .footer-column ul li a:hover {
   text-decoration: underline;
 }
-
 .footer-column2 {
   flex: 1;
   padding: 20px;
   max-width: 500px;
   text-align: right;
 }
-
 .footer-column2 h2 {
   font-size: 24px;
   margin-bottom: 10px;
 }
-
 .footer-column2 ul {
   list-style-type: none;
   padding: 0;
 }
-
 .footer-column2 ul li {
   margin-bottom: 10px;
 }
-
 .footer-column2 ul li a {
   color: black;
   text-decoration: none;
 }
-
 .footer-column2 ul li a:hover {
   text-decoration: underline;
 }
 
 
-
+/**BOTON PARA SUSCRIBIRSE**/
 .buttonEspecial {
   margin-top: 40px;
   border: 2px solid;
   border-color: yellow
 }
 
+
+/**BOTON PARA FRASE CHUCK INSTA**/
 .buttonEspecial2 {
-  width: 400px;
-  height: 70px;
-  margin-top: 20px;
-  border: 6px solid;
-  color: black;
-  border-color: black;
-  font-size: 20px;
-  font-family: cursive;
-  transition: border-color 0.50s;
-}
+    width: 400px;
+    height: 70px;
+    margin-top: 20px;
+    border: 6px solid;
+    color: black;
+    border-color: blue;
+    font-size: 20px;
+    font-family: cursive;
+    transition: border-color 0.20s;
+    animation: pulse 3s infinite;
+  }
+  .buttonEspecial2:hover {
+    border-color: white;
+    animation-play-state: paused; /* Detiene la animación al pasar el mouse sobre el botón */
+  }
+  @keyframes pulse {
+    20% {
+      border-color: rgb(255, 255, 255);
+    }
+    60% {
+      border-color: rgb(255, 0, 0);
+    }
+    90% {
+      border-color: rgb(1, 16, 235);
+    }
+  }
 
-.buttonEspecial2:hover {
-  border-color: white;
-}
 
-
-
+/**CUADRO QUE MUESTRA LA FRASE TRAIDA DE LA API**/
 .carta {
   margin-top: 10px;
   border: 1px solid;
@@ -170,6 +158,7 @@
   font-size: 20px;
 }
 
+/**TIRULO PRINCIPAL**/
 .titulo {
   width: 50%;
   font-size: 30px;
@@ -187,7 +176,7 @@
   filter: drop-shadow(0 0 1em rgb(255, 238, 0));
 }
 
-
+/**LISTA QUE MUESTRA SUSCRIPTORES**/
 .list-section {
   width: auto;
   color: black;
@@ -209,7 +198,6 @@
   border-radius: 20px;
   margin-right: 20px;
 }
-
 .delete-btn {
   width: auto;
   height: 50px;
@@ -218,7 +206,7 @@
   border-radius: 20px;
 }
 
-
+/*BOTON PARA QUE CHUCK TE AYUDE PINCHANDO SU IMAGEN*/
 .botonIMG {
   width: 210px;
   height: 200px;
@@ -228,11 +216,12 @@
   background-color: rgba(255, 255, 255, 0);
   margin-top: 30px;
 }
-
-.interrogacionImg {
-  margin-top: -30px;
+/*MENSAJE DE CLICK ME ABAJO DE INFO IMAGEN CHUCK*/
+.clickeame {
+  color: white;
 }
 
+/**ESTILOS PARA LOS BOTONES QUE NO SEAN LA INFO QUE DA CHUCK DE AYUDA**/
 .buttonGenerales {
   border-radius: 10px;
   border: 2px solid transparent;
@@ -243,11 +232,11 @@
   transition: border-color 0.50s;
   font-family: monospace;
 }
-
 .buttonGenerales:hover {
   border-color: white;
 }
 
-.clickeame {
-  color: white;
+/*PARRAFO DE CREADO Y PROGRAMADO POR BRANDON CASTRO, FOOTER AL FINAL DE PAG*/
+.centrado p {
+  font-family:cursive;
 }

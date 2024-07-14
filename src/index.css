@@ -20,7 +20,7 @@ body {
 }
 
 form {
-  width: auto;
+  width: 70%;
   border-radius: 10%;
   border: 2px solid white;
   margin: auto;
@@ -32,6 +32,17 @@ form {
 
 form:hover {
   filter: drop-shadow(0 0 5em black);
+}
+
+/**h2 del form**/
+.form-h2 {
+  font-size: 25px;
+  font-family: cursive;
+  line-height: 1.1;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  border: 2px solid yellow;
 }
 
 h1 {

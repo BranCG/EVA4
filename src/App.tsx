@@ -20,7 +20,7 @@ const App: React.FC = () => {
                     <p className='titulo'><b>~ Chuck Norris no duerme, ESPERA.</b></p>
                     <ImagenChuck /> {/*Imagen principal de Chuck Norris*/}
                     <CompBtnFrase /> {/*Contiene componente anidado CompApiRequest*/}
-                    <CompLogicaCrud /> {/*Contiene logica y 2 componentes anidados CompLista y CompFormu*/}
+                    <CompLogicaCrud /> {/*Anida 2 componentes hacia ComponenteLogicaCrud (anidacion nivel 1)*/}
                 </div> 
             </div>
             <CompFooter1 /> {/*Footer de contacto "pie de pagina"*/}

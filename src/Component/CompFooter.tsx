@@ -1,5 +1,8 @@
-export default function CompFooter1() {
-    return (
+
+
+{/* funcion para traer al footer, reutilice footer de EVA3, utilice rrss de Chuck*/}
+export default function CompFooter1() {   
+    return (       
         <footer id="CONTACTO" className="bg-dark text-light footer-container">
             <div className="footer-row">
                 <div className="footer-column">
@@ -16,13 +19,11 @@ export default function CompFooter1() {
                         <li><a className="text-light btn-outline-danger" href="https://www.instagram.com/chucknorris/" target="_blank" rel="noopener noreferrer"><b>Instagram</b></a></li>
                         <li><a className="text-light btn-outline-danger" href="https://www.linkedin.com/posts/wayne-worsham-664403274_chuck-norris-words-of-wisdom-selfconfidence-activity-7170579871792906240-6uLz?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer"><b>LinkedIn</b></a></li>
                     </ul>
-                    <div className="container">   
-                        <div>
-                            <p>Creado y desarrollado por Brandon Castro</p>
-                        </div> 
-                    </div>     
-                </div>
+                </div> 
             </div>
+            <div className="centrado">
+                <p>Creado y desarrollado por Brandon Castro.</p>
+            </div>  
         </footer>
     );
 }
