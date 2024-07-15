@@ -1,23 +1,15 @@
+/**Mantengo alineado al centro la pagina**/
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
   text-align: center;
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
-
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  width: 100%;
 }
 
+/**Ingrese una imagen de bandera USA al bg**/
 body {
   margin: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.pinimg.com/736x/f5/71/43/f57143810c15dddcd9f6c122770e3ad4.jpg");
 }
+
 
 form {
   width: 70%;
