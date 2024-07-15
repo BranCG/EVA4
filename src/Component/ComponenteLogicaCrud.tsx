@@ -22,7 +22,7 @@ const PAISES_LATAM = [
 ];
 
 const CompLogicaCrud: React.FC = () => {
-    // Estado local para almacenar y manejar usuarios
+    // Estado local para almacenar ymanejar usuarios
     const [users, setUsers] = useState<User[]>(() => {
         // Inicializa el estado de 'users' obteniendo los usuarios guardados del localStorage, si existen
         const savedUsers = localStorage.getItem('users');
@@ -34,30 +34,42 @@ const CompLogicaCrud: React.FC = () => {
         localStorage.setItem('users', JSON.stringify(users));
     }, [users]);
 
-    // Función para agregar un nuevo usuario a 'users'
+    //Función para agregar un nuevo usuario a 'users'
     const addUser = (user: User) => {
         setUsers([...users, user]);
     };
 
-    // Función para eliminar un usuario de 'users' por su 'id' 
+    //Función para eliminar un usuario de 'users' por su 'id' 
     const deleteUser = (id: number) => {
         setUsers(users.filter(user => user.id !== id));
     };
 
-    // Función para editar un usuario en 'users' por su 'id' EN BASE A PROMPT !!
-    const editUser = (id: number) => {
-        const userName = prompt("Editar Nombre:", users.find(user => user.id === id)?.nombre);
-        const userEmail = prompt("Editar Correo:", users.find(user => user.id === id)?.correo);
-        const userCountry = prompt(`Editar País (opciones: ${PAISES_LATAM.join(', ')}):`, users.find(user => user.id === id)?.pais);
-        
-        if (userName && userEmail && userCountry && PAISES_LATAM.includes(userCountry)) {
-            // Si todos los campos de edición están llenos y el país es válido (está en PAISES_LATAM)...
-            setUsers(users.map(user => (user.id === id ? { id, nombre: userName, correo: userEmail, pais: userCountry } : user)));
-        } else {
-            // Si falta algún campo de edición o el país no es válido...
-            alert("País no válido. Intente nuevamente.");
-        }
+    //Vaalidar el formato del correo electrónico, reutilice estructura. 
+    const validarCorreo = (correo: string): boolean => {
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(correo);
     };
+
+    // Función para editar un usuario en 'users' por su 'id' EN BASE A PROMPT !!
+const editUser = (id: number) => {
+    const userName = prompt("Editar Nombre:", users.find(user => user.id === id)?.nombre);
+    const userEmail = prompt("Editar Correo:", users.find(user => user.id === id)?.correo);
+    const userCountry = prompt(`Editar País (opciones: ${PAISES_LATAM.join(', ')}):`, users.find(user => user.id === id)?.pais);
+    
+    if (userName && userEmail && userCountry && PAISES_LATAM.includes(userCountry)) {
+        // Validar el formato del correo electrónico
+        if (!validarCorreo(userEmail)) {
+            alert("Por favor ingrese un correo electrónico válido.");
+            return;
+        }
+
+        // Si todos los campos de edición están llenos y el país es válido (está en PAISES_LATAM)...
+        setUsers(users.map(user => (user.id === id ? { id, nombre: userName, correo: userEmail, pais: userCountry } : user)));
+    } else {
+        // Si falta algún campo de edición o el país no es válido...
+        alert("País no válido. Intente nuevamente.");
+    }
+};
 
     return (
         <div>
