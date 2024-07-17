@@ -16,5 +16,4 @@ export default function ImgChuck() {
                 <CompText /> {/*Anida hacia CompTextInfo, anidacion nivel 4*/}
             </button>
     )
-
 };

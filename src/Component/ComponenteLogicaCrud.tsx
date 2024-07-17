@@ -73,7 +73,7 @@ const editUser = (id: number) => {
 
     return (
         <div>
-            {/* Componente Formulario para añadir usuarios */}
+            {/* Componente Formulario anida a CompForm nivel 2 */}
             <CompFormu onAddUser={addUser} />
             <div className="list-section bg-info">
                 {/* Componente Lista para mostrar usuarios */}

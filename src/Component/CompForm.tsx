@@ -118,7 +118,7 @@ const CompFormu: React.FC<CompFormuProps> = ({ onAddUser }) => {
             </select> <br/>
             {/* Botón para enviar el formulario */}
             <button className='buttonEspecial buttonGenerales bg-danger' type="submit"><b>¡Suscribirme!</b></button> <br />
-            <ImgChuck /> {/* Componente ImgChuck, anidación de nivel 3 */}
+            <ImgChuck /> {/* Componente ImgChuck, anidación hacia CompInterrog de nivel 3 */}
         </form>
     );
 };
